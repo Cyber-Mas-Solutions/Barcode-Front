@@ -36,6 +36,7 @@ import UserManageFirst from './pages/UserManageFirst';
 import UserAccess from './pages/UserAccess';
 import BarCodeWelcomePage from './pages/BarCodeWelcomePage';
 import BarCodeScanningTips from './pages/BarCodeScanningTips';
+import EnterPackageDetails from './pages/EnterPackageDetails';
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
         <Route path="/useraccess" element={<UserAccess/>} />
         <Route path="/barcodewelcomepage" element={<BarCodeWelcomePage />} />
         <Route path='/barcodescanningtips' element={<BarCodeScanningTips />} />
+        <Route path='/enterpackagedetails' element={<EnterPackageDetails />} />
         {/* Add more routes as needed */}
       </Routes>
     </BrowserRouter>
