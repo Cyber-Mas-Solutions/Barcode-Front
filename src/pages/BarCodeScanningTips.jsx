@@ -1,5 +1,6 @@
 import Sidebar from "../components/Sidebar"
 import Footer from "../components/Footer"
+import { useNavigate } from "react-router-dom"
 
 function BarCodeScanningTips() {
   const scanningTips = [
@@ -122,16 +123,19 @@ function BarCodeScanningTips() {
                   </svg>
                 </div>
               </div>
+              <p className="text-sm">
+                Follow the tips above and get ready to scan your item.
+              </p>
               <button
-                onClick={() => alert("Scanning started!")}
+                onClick={() => alert("Scanning started!") }
                 className="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg shadow-md transition duration-200"
               >
-              Ready to Scan!
+              Start Scanning!
               </button>
-              <p className="text-green-700 text-sm">
+              {/* <p className="text-green-700 text-sm">
                 Following these tips will help you achieve fast, accurate scans and improve your overall scanning
                 experience.
-              </p>
+              </p> */}
             </div>
           </div>
         </main>
