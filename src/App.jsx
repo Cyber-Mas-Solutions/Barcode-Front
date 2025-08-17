@@ -34,7 +34,9 @@ import ResetPassword from './pages/ResetPassword';
 import UserManage from './pages/UserManage';
 import UserManageFirst from './pages/UserManageFirst';
 import UserAccess from './pages/UserAccess';
-// import ScanBarcodeWrapper from './components/ScanBarcodeWrapper';
+import BarCodeWelcomePage from './pages/BarCodeWelcomePage';
+import BarCodeScanningTips from './pages/BarCodeScanningTips';
+
 
 function App() {
   return (
@@ -46,8 +48,10 @@ function App() {
         <Route path="/login" element={<Home />} />
         <Route path="/usermanage" element={<UserManageFirst/>} />
         <Route path="/useraccess" element={<UserAccess/>} />
-        <Route path="/settings" element={<UserAccess />} />
-    </Routes>
+        <Route path="/barcodewelcomepage" element={<BarCodeWelcomePage />} />
+        <Route path='/barcodescanningtips' element={<BarCodeScanningTips />} />
+        {/* Add more routes as needed */}
+      </Routes>
     </BrowserRouter>
   );
 }
