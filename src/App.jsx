@@ -47,7 +47,7 @@ function App() {
         <Route path="/usermanage" element={<UserManageFirst/>} />
         <Route path="/useraccess" element={<UserAccess/>} />
         <Route path="/settings" element={<UserAccess />} />
-      </Routes>
+    </Routes>
     </BrowserRouter>
   );
 }
