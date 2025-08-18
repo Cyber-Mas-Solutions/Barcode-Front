@@ -6,6 +6,10 @@
 // import UserManage from './pages/UserManage';
 // import UserManageFirst from './pages/UserManageFirst';
 // import UserAccess from './pages/UserAccess';
+// import BarCodeWelcomePage from './pages/BarCodeWelcomePage';
+// import BarCodeScanningTips from './pages/BarCodeScanningTips';
+// import EnterPackageDetails from './pages/EnterPackageDetails';
+
 
 // function App() {
 //   return (
@@ -17,12 +21,17 @@
 //         <Route path="/login" element={<Home />} />
 //         <Route path="/usermanage" element={<UserManageFirst/>} />
 //         <Route path="/useraccess" element={<UserAccess/>} />
+//         <Route path="/barcodewelcomepage" element={<BarCodeWelcomePage />} />
+//         <Route path='/barcodescanningtips' element={<BarCodeScanningTips />} />
+//         <Route path='/enterpackagedetails' element={<EnterPackageDetails />} />
+//         {/* Add more routes as needed */}
 //       </Routes>
 //     </BrowserRouter>
 //   );
 // }
 
 // export default App;
+
 
 
 
@@ -37,7 +46,7 @@ import UserAccess from './pages/UserAccess';
 import BarCodeWelcomePage from './pages/BarCodeWelcomePage';
 import BarCodeScanningTips from './pages/BarCodeScanningTips';
 import EnterPackageDetails from './pages/EnterPackageDetails';
-
+// import ScanBarcodeWrapper from './components/ScanBarcodeWrapper';
 
 function App() {
   return (
@@ -49,11 +58,12 @@ function App() {
         <Route path="/login" element={<Home />} />
         <Route path="/usermanage" element={<UserManageFirst/>} />
         <Route path="/useraccess" element={<UserAccess/>} />
+        <Route path="/settings" element={<UserAccess />} />
         <Route path="/barcodewelcomepage" element={<BarCodeWelcomePage />} />
         <Route path='/barcodescanningtips' element={<BarCodeScanningTips />} />
         <Route path='/enterpackagedetails' element={<EnterPackageDetails />} />
-        {/* Add more routes as needed */}
-      </Routes>
+        
+    </Routes>
     </BrowserRouter>
   );
 }
