@@ -86,9 +86,9 @@ const Sidebar = () => {
           <SidebarLink to="/usermanage" icon={<User size={18} />} label="Users" />
         )}
 
-        <SidebarLink to="/reports" icon={<BarChart2 size={18} />} label="Reports" />
-        <SidebarLink to="/security" icon={<Shield size={18} />} label="Enter Package Details" />
-        <SidebarLink to="/settings" icon={<ScanBarcode size={18} />} label="Scan Barcode" />
+        <SidebarLink to="/barcodescanningtips" icon={<BarChart2 size={18} />} label="Reports" />
+        <SidebarLink to="/EnterPackageDetails" icon={<Shield size={18} />} label="Enter Package Details" />
+        <SidebarLink to="/barcodewelcomepage" icon={<ScanBarcode size={18} />} label="Scan Barcode" />
         {role === 'Admin' && (
           <SidebarLink to="/useraccess" icon={<User size={18} />} label="User Access" />
         )}
